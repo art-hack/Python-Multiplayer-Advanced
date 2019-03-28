@@ -148,8 +148,8 @@ def menu_screen():
         clock.tick(60)
         win.fill((128, 128, 128))
         font = pygame.font.SysFont("comicsans", 60)
-        text = font.render("Click to Play!", 1, (255,0,0))
-        win.blit(text, (100,200))
+        text = font.render("Click to Play!", 1, (255, 0, 0))
+        win.blit(text, (width/2 - text.get_width()/2, height/2 - text.get_height()/2))
         pygame.display.update()
 
         for event in pygame.event.get():
